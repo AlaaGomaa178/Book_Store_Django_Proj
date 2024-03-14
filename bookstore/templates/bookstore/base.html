@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %} <!-- Load static files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bookstore{% endblock %}</title>
+
+<body>
+    <header>
+        <h1>Book Store</h1> <!-- Heading of the website -->
+        <nav>
+            <a href="{% url 'home' %}">Home</a> <!-- Link to the home page -->
+            <a href="{% url 'all_books' %}">All Books</a> <!-- Link to view all books -->
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bookstore. All rights reserved.</p> 
+    </footer>
+
+</body>
+</html>

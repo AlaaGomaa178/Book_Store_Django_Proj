@@ -1,0 +1,32 @@
+{% extends 'bookstore/base.html' %}
+{% load static %}
+
+{% block title %}All Books{% endblock %}
+
+{% block content %}
+
+<h2>All Books</h2>
+
+<div class="book-container">
+
+    {% for book in books %}
+  
+    <div class="book-card">
+        <img src="{{ book.image.url }}" alt="{{ book.title }}" class="book-image">
+
+        <div class="book-details">
+            <h3>{{ book.title }}</h3>
+            <p class="price">Price: ${{ book.price }}</p>
+            <a href="{% url 'show_book' book.id %}" class="btn">Show Book</a>
+            <a href="{% url 'edit_book' book.id %}" class="btn">Edit Book</a> 
+            <a href="{% url 'book_delete' book.id %}" class="btn">Delete Book</a>
+        </div>
+
+    </div>
+    {% endfor %}
+
+</div>
+
+<a href="{% url 'create_books' %}" class="btn btn-primary">Create New Book</a>
+
+{% endblock %}

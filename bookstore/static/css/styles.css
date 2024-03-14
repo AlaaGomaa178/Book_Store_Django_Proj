@@ -1,0 +1,194 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../gb.jpg'); 
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.33; 
+}
+
+/* styles for the navigation bar */
+nav {
+    background-color: #011932; 
+    padding: 10px 0; 
+    text-align: left; 
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    margin: 0 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* 1e468b
+
+/* styles for the header */
+header {
+    text-align: center; 
+    padding: 10px 0; 
+}
+
+h1 {
+    font-size: 80px; 
+    color: #011932; 
+    font-family: 'Arial Black', sans-serif; 
+    font-style: italic;
+}
+
+
+/*  styles for hero section */
+.Welcome-section {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 25px
+    
+}
+
+.Welcome-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General styles */
+.container {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+
+.book-details {
+    text-align: center;
+}
+
+
+.book-image {
+    width: 250px; 
+    height: 360px; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    color: #011932;
+    font-weight: bold;
+
+}
+
+.author {
+    font-style: italic;
+    color: #000000;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #011932;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto; 
+    display: block; 
+    width: fit-content; 
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/*  styles for the form */
+.book-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.33);
+  }
+  
+  .book-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .book-form label {
+    font-weight: bold;
+  }
+  
+  .book-form input[type="text"],
+  .book-form input[type="number"],
+  .book-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #011932;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.33);
+  }
+  
+  .book-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #011932;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-form button:hover {
+    background-color: #0056b3;
+  }
+  
+/* styles for book cards */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+}
+
+/* styles for the footer */
+footer {
+    text-align: center; 
+    background-color: #c2daf2; 
+    padding: 10px 0; 
+}
+
+footer p {
+    margin: 0; 
+    color: #011932; 
+}

@@ -1,0 +1,23 @@
+{% extends 'bookstore/base.html' %}
+{% load static %}
+
+{% block title %}{{ book.title }} - Book Details{% endblock %}
+
+{% block content %}
+
+<div class="container"> 
+
+    <div class="book-details"> 
+        <h2>{{ book.title }}</h2> 
+        <img src="{{ book.image.url }}" alt="{{ book.title }}" class="book-image"> 
+        <p class="author">Author: {{ book.author }}</p> 
+        <p class="price">Price: ${{ book.price }}</p> 
+        <p>Number of Pages: {{ book.pages }}</p> 
+        <p>Created At: {{ book.created_at }}</p>
+        <p>Updated At: {{ book.updated_at }}</p>
+    </div>
+
+    <a href="{% url 'all_books' %}" class="btn btn-primary">Back to All Books</a>
+</div>
+
+{% endblock %}

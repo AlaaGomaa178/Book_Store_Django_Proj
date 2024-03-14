@@ -1,0 +1,16 @@
+{% extends 'bookstore/base.html' %} <!-- Extend base.html template -->
+
+{% load static %} <!-- Load the static template tag library to handle static files -->
+
+{% block title %}Welcome to Bookstore Home{% endblock %} 
+
+{% block content %}
+
+<div class="Welcome-section"> 
+    <h2>Welcome to Bookstore Home</h2> 
+    <img src="{% static 'bookstore.jpg' %}" alt="Bookstore Image" class="Welcome-image"> 
+    <p>Welcome to our Bookstore website! Here, you'll find a wide selection of books for all interests and ages.</p> 
+    <p>Explore our collection, discover new authors, and find your next favorite read.</p> 
+</div>
+
+{% endblock %}
